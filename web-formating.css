@@ -1,0 +1,293 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica,Arial,sans-serif;
+    line-height: 1.6em;
+    background-color: #f4f4f4;
+    font-size: 20px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+}
+header .current a{
+    color:rgb(221, 131, 29) ;
+    font-weight: bold;
+}
+/* header */
+header{
+    background-color: rgba(26, 25, 25, 0.917);
+    color: white;
+    min-height: 70px;
+    border-bottom: 3px rgb(221, 131, 29) solid;
+}
+header .container{
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
+header .brand{
+    float: left;
+}
+.brand span{
+    color: rgba(194, 41, 30, 0.872);
+}
+/* navbar */
+.navbar {
+    float: right;
+    margin-top:28px;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    float: left;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
+    
+}
+.navbar a:hover{
+    color: #474744;
+}
+/* showcase */
+#showcase{
+    background:rgba(0,0,0,0.4) url('./earth2.jpg');
+    min-height: 500px;
+    background-blend-mode: darken;
+}
+.show{
+    margin:50px 0px 10px 0px;
+    padding: 20px 0px;
+}
+#showcase h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.6em;
+}
+#showcase p{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.6em;
+}
+/* newsletter */
+#newsletter{
+    background-color: rgba(26, 25, 25, 0.917);
+}
+#newsletter h2{
+    color: rgb(221, 131, 29);
+    float: left;
+}
+#newsletter .register{
+    float:right;
+    margin-top: 25px;
+}
+#newsletter input[type='email']{
+    min-height: 25px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+}
+.button{
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(221, 131, 29);
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+/* article */
+#content{
+    margin: 50px 0px;
+}
+#content .box{
+    min-height: 300px;
+    width: 30%;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px 15px 10px 15px;
+    padding: 0px 5px;
+
+}
+#content .logo{
+    height: 200px;
+    width: 250px;
+}
+/* footer */
+#end{
+    background-color: rgba(26, 25, 25, 0.917);
+    text-align: center;
+    color: white;
+}
+
+/* sevices */
+.s-content{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.s-head{
+    text-align: center;
+    font-size: 25px;
+}
+.s-data{
+    margin-top: 50px;
+    text-align: center;
+}
+.s-box{
+    min-height:600px; 
+    width: 31%;
+    padding: 5px 15px;
+    margin: 0px 10px;
+    float: left; 
+    box-sizing: border-box;
+    border: 2px rgb(138, 136, 136) dashed;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* about */
+.about-content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.a-content{
+    width: 55%;
+    float: left;
+}
+.a-head{
+    font-size: 30px;
+}
+.a-data{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+/* about contact form */
+.contact{
+    width: 35%;
+    float: right;
+    background-color: #0d0836;
+    border-radius: 10px;
+    margin-top: 35px;
+    min-height: 500px;
+}
+.c-form{
+    color: white;
+    padding: 0px 10px 25px 15px;
+    box-sizing: border-box;
+    width: 90%;
+    font-size: 22px;
+}
+.c-form h1{
+    text-align: center;
+    font-size: 30px;
+}
+.c-form input{
+    width: 100%;;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.c-form textarea {
+    border-radius: 10px;
+    padding:10px 10px;
+    font-size: 16px;
+
+}
+.c-form button{
+    width: 100%;
+}
+@media(max-width:770px){
+    header .brand,
+    .navbar,
+    .navbar li,
+    #newsletter .register,
+    #newsletter h2,
+    #content .box,
+    .a-content
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header .container{
+        width: 80%;
+    }
+    .navbar li{
+        display: inline;
+    }
+    .navbar a{
+        padding: 0px 10px 0px 10px;
+    }
+    #showcase h1{
+        font-size: 30px;
+    }
+    #showcase p{
+        font-size: 21px;
+    }
+    .show{
+        margin: 30px 0px 10px 0px;
+        padding: 5px 0px;
+        
+    }
+    #newsletter input[type='email']{
+        width: 100%;
+    }
+    .button{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .s-box{
+        min-height: 400px;
+        margin-bottom: 15px;
+        float: none;
+        text-align: center;
+        width: 95%;
+    }
+    .s-head{
+        line-height: 1.8em;
+        font-size: 22px;
+    }
+    #end .container{
+        width: 100%;
+    }
+    .contact{
+        float: none;
+        width: 100%;
+    }
+    .c-form textarea{
+        width: 90%;
+    }
+    .c-form button{
+        width: 70%;
+        position: relative;
+        left: 20%;
+    }
+    .c-form h1{
+        padding: 20px 0px;
+    }
+
+
+    
+}
+@media(max-width:395px){
+    header {
+        font-size:80%;
+    }
+}
